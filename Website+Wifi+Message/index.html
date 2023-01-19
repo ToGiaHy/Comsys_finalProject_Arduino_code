@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+  <!-- The navigator -->
+    <main class="main_process">
+    <nav>
+            <ul class="nav_container">
+                <li class="nav_item">
+                    <a href="#" class="header_link">Home</a>
+                </li>
+                <li class="nav_item">
+                  <!-- NodeMcu ip address -->
+                    <a href="http://192.168.1.113" class="header_link">Messaging</a>
+                </li>
+                <li class="nav_item">
+                    <a href="pos.html" class="header_link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    <!-- Welcome text -->
+    <h1 class="home_page__title">Welcome back, Rizzler
+    </h1>
+    <!-- A music player to entertain the operators -->
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio src="music/TransitoryLands.mp3" id="audio"></audio>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+      <!-- A panel to open and close in the page -->
+      <div class="img-container">
+        <img src="images/Renegade.jpg" alt="music-cover" id="cover" />
+      </div>
+      <div class="open_sesame">
+            <button id="close_btn" onclick="close_music_player()">
+              <img class="img_disc" src="asset/css/img/Close.png" alt="close button">
+            </button>
+            <button id="open_btn" onclick="open_music_player()">
+                <img class="img_disc" src="asset/css/img/Disc.png" alt="disc button">
+            </button>
+      </div>
+    </div>
+
+     </main>
+      </div>
+</div> 
+    <!-- The function the change the background -->
+    <div class="change_img">
+        <button id="prev_img" class="action-btn" onclick="prevImgFunction()">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="next_img" class="action-btn" onclick="nextImgFunction()">
+          <i class="fas fa-forward"></i>
+        </button>
+        <div class="open_sesame_img">
+            <button id="close_btn_img" onclick="closeImgSlider()">
+              <img class="img_disc" src="asset/css/img/Close.png" alt="close button">
+            </button>
+            <button id="open_btn_img" onclick="openImgSlider()">
+                <img class="img_disc" src="asset/css/img/image.png" alt="disc button">
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
